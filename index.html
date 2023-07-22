@@ -17,20 +17,22 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <!-- Header Section -->
   <header class="container">
     <nav class="flex justify-between items-center py-4">
       <a href="#home">
         <img src="./images/icons/logo.png" alt="Site Logo" class="max-w-[220px]">
       </a>
-      <ul class="hidden gap-4 font-medium md:flex">
+      <ul
+        class="font-medium flex flex-col justify-center items-center gap-4 absolute top-0 -right-full transition-[right] duration-300 bottom-0 bg-white w-4/5 max-w-[320px] shadow-xl shadow-black text-lg md:text-base md:static md:flex-row md:shadow-none">
         <li><a href="#home">Home</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#about">About us</a></li>
         <li><a href="#contact">Contact us</a></li>
+        <i class="fa-solid fa-xmark text-2xl cursor-pointer absolute top-6 left-6 md:hidden"></i>
       </ul>
-      <i class="fa-solid fa-bars text-xl md:hidden"></i>
+      <i class="fa-solid fa-bars text-xl cursor-pointer md:hidden"></i>
     </nav>
 
     <!-- Hero Section -->
@@ -45,6 +47,9 @@
       </div>
     </section>
   </header>
+
+  <!-- Custom JavaScript -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
