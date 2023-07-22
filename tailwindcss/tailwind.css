@@ -13,7 +13,7 @@
     @apply mb-2 font-bebas text-3xl uppercase text-title;
   }
   h3 {
-    @apply mb-2 text-lg font-bold text-title;
+    @apply mb-2 text-2xl font-bold text-title;
   }
   p {
     @apply mb-6;
@@ -22,6 +22,6 @@
 
 @layer utilities {
   .btn {
-    @apply inline-flex cursor-pointer items-center gap-2 rounded-md bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-5 py-3 font-medium text-white;
+    @apply inline-flex cursor-pointer items-center gap-2 rounded-md bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-5 py-3 font-medium uppercase text-white;
   }
 }
