@@ -4,14 +4,14 @@ const navMenu = document.querySelector("header nav ul");
 const navLinks = document.querySelectorAll("header nav ul a");
 
 toggler.addEventListener("click", ()=> {
-  navMenu.classList.remove("-right-full");
-  navMenu.classList.add("right-0");
+  navMenu.classList.remove("hidden");
+  navMenu.classList.add("flex");
 })
 navClose.addEventListener("click", ()=> {
-  navMenu.classList.add("-right-full");
-  navMenu.classList.remove("right-0");
+  navMenu.classList.add("hidden");
+  navMenu.classList.remove("flex");
 })
 navLinks.forEach(n => n.addEventListener("click", ()=> {
-  navMenu.classList.add("-right-full");
-  navMenu.classList.remove("right-0");
+  navMenu.classList.add("hidden");
+  navMenu.classList.remove("flex");
 }))

@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="overflow-x-hidden w-screen">
+<body>
   <!-- Header Section -->
   <header class="container">
     <nav class="flex justify-between items-center py-4">
@@ -25,11 +25,11 @@
         <img src="./images/icons/logo.png" alt="Site Logo" class="max-w-[220px]">
       </a>
       <ul
-        class="font-medium flex flex-col justify-center items-center gap-4 absolute top-0 -right-full transition-[right] duration-300 bottom-0 bg-white w-4/5 max-w-[320px] shadow-xl shadow-black text-lg md:text-base md:static md:flex-row md:shadow-none">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#contact">Contact us</a></li>
+        class="font-medium hidden flex-col justify-center items-center gap-4 absolute top-0 right-0 bottom-0 bg-white w-4/5 max-w-[320px] shadow-xl shadow-black text-lg md:text-base md:static md:flex md:flex-row md:shadow-none">
+        <li><a href="#home" class="hover:text-primary">Home</a></li>
+        <li><a href="#products" class="hover:text-primary">Products</a></li>
+        <li><a href="#about" class="hover:text-primary">About us</a></li>
+        <li><a href="#contact" class="hover:text-primary">Contact us</a></li>
         <i class="fa-solid fa-xmark text-2xl cursor-pointer absolute top-6 left-6 md:hidden"></i>
       </ul>
       <i class="fa-solid fa-bars text-xl cursor-pointer md:hidden"></i>
